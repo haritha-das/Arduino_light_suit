@@ -206,15 +206,10 @@ void f()
     {
       digitalWrite(2,1);
       digitalWrite(3,1);
-          digitalWrite(9,1);
-              digitalWrite(10,1);
-              delay(100);
-              digitalWrite(2,0);
-      digitalWrite(3,0);
-          digitalWrite(9,0);
-              digitalWrite(6,0);
-              delay(100);
+          digitalWrite(4,1);
     }
+       
+            
     void al()
     {
       digitalWrite(2,1);
@@ -246,18 +241,18 @@ void f()
     {
       digitalWrite(9,1);
       digitalWrite(10,1);
-      delay(1000);
+      delay(500);
       digitalWrite(7,1);
          digitalWrite(8,1);
-         delay(1000);
+         delay(500);
             digitalWrite(5,1);
                digitalWrite(6,1);
-               delay(1000);
+               delay(500);
                   digitalWrite(2,1);
                   digitalWrite(3,1);
-                  delay(1000);
+                  delay(500);
                      digitalWrite(4,1);
-                     delay(1000);
+                     delay(500);
     }
     
 void up()
@@ -274,7 +269,7 @@ void rfl()
 {
  digitalWrite(10,1);
  digitalWrite(8,1);
- delay(1000);
+// delay(1000);
 //   digitalWrite(10,0);
 // digitalWrite(8,0);
 // delay(1000);
@@ -283,7 +278,7 @@ void lfl()
 {
  digitalWrite(9,1);
  digitalWrite(7,1);
- delay(1000);
+// delay(1000);
 //   digitalWrite(9,0);
 // digitalWrite(7,0);
 // delay(1000);
@@ -294,7 +289,7 @@ void dwn()
  digitalWrite(8,1);
    digitalWrite(9,1);
  digitalWrite(10,1);
- delay(1000);
+ //delay(1000);
 }
 void lhh()
 {
@@ -308,12 +303,36 @@ void lhh()
 void rhh()
 {
  digitalWrite(3,1);
- digitalWrite(76,1);
+ digitalWrite(6,1);
  delay(1000);
 //   digitalWrite(3,0);
 // digitalWrite(6,0);
 // delay(1000);
 }
+void rhhh()
+{
+ digitalWrite(3,1);
+ digitalWrite(6,1);
+  digitalWrite(8,1);
+ digitalWrite(10,1);
+
+//   digitalWrite(3,0);
+// digitalWrite(6,0);
+// delay(1000);
+}
+
+void lhhh()
+{
+ digitalWrite(2,1);
+ digitalWrite(5,1);
+ digitalWrite(7,1);
+ digitalWrite(9,0);
+// delay(1000);
+//   digitalWrite(2,0);
+// digitalWrite(5,0);
+// delay(1000);
+}
+
 void bt(){
   digitalWrite(10, HIGH);
   digitalWrite(9, HIGH);
@@ -395,92 +414,222 @@ pinMode(15,OUTPUT);
 }
 
 void loop() {
+  
 {allon();}
 delay(1000);
 {alloff();}
-delay(1000);  
+delay(5800);  
 {w();}
-delay(1000);
-{alloff();}
-delay(1000);
+delay(50);
 {allon();}
-delay(1000);
+delay(4000);
+
 {alloff();}
+delay(100);
+{allon();}
+delay(6000);
 
-
+{alloff();}
+delay(200);
+{rfl();}
+delay(800);//right foot & leg
+{alloff();}
+delay(50);
 {lfl();} //left foot&leg
 delay(1000);
 {alloff();}
-delay(1000);
-
-{rfl();}
-delay(1000);//right foot & leg
+delay(50);
+{rhhh();}
+delay(1200);//right hip & hand
 {alloff();}
-delay(1000);
+delay(50);
 
-{rhh();}
-delay(1000);//right hip & hand
+{lhhh();}
+delay(1400);//left hip & hand
 {alloff();}
-delay(1000);
-
-{lhh();}
-delay(1000);//left hip & hand
-{alloff();}
-delay(1000);
+delay(50);
 
 {h();}
-delay(1000);
+delay(100);
 {alloff();}
-delay(1000);
+delay(50);
+
+{bt();}
+delay(800);
+{alloff();} //blink
+  delay(50);
+
+  {allon();}
+  {alloff();} //blink
+  delay(100);
+
+  {allon();}
+  {alloff();} //blink
+  delay(100);
+
+
+
+
 
 {allon();}
-delay(1000);
+delay(2000);
 {alloff();}
-delay(1000);
+delay(3000);
+//{dwn();}
+//delay(1000);
+//{up();}
+//delay(1000);
+
+//{alloff();}
+//delay(4500);
+
+//{bt();}
+//delay(1250);
+//{alloff();}
+//delay(50);
+//{tb();}
+//delay(1250);
+
 {allon();}
-delay(1000);
+delay(2000);
 {alloff();}
-delay(1000);
+delay(2500);
+
+{allon();}
+delay(4500);
+{alloff();}
+delay(3500);
+{allon();}
+delay(2000);
+{alloff();}
+delay(1500);
 {dwn();}
 delay(1000);
 {alloff();}
-delay(1000);
+delay(1600);
 {up();}
-delay(1000);
+delay(600);
 {alloff();}
-delay(1000);
-{bt();}
-delay(1000);
-{tb();}
-delay(1000);
-{allon();}
-delay(1000);
-{alloff();}
-delay(1000);
-{allon();}
-delay(1000);
-{alloff();}
-delay(1000);
-{allon();}
-delay(1000);
-{alloff();}
-delay(1000);
-{allon();}
-delay(1000);
-{alloff();}
-delay(1000);
-{allon();}
-delay(1000);
-{alloff();}
-delay(1000);
-{h();}
-delay(1000);
-{alloff();}
-delay(1000);
-{allon();}
-delay(1000);
-{alloff();}
-delay(10000);
+delay(5000);
+
+//{bt();}
+//{tb();}
+digitalWrite(10, HIGH);
+  digitalWrite(9, HIGH);
+  delay(100);
+  digitalWrite(10, LOW);
+  digitalWrite(9, LOW);
+  delay(100);
+  digitalWrite(8, HIGH);
+   digitalWrite(7, HIGH);
+  delay(100);
+  digitalWrite(8, LOW);
+  digitalWrite(7, LOW);
+  delay(100);
+  digitalWrite(6, HIGH);
+  digitalWrite(5, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+  digitalWrite(5, LOW);
+  delay(100);
+  digitalWrite(3, HIGH);
+   digitalWrite(2, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+  digitalWrite(2, LOW);
+  delay(100);
+  digitalWrite(4, HIGH);
+  delay(100);
+  digitalWrite(4, LOW);
+  delay(100);
+
+  digitalWrite(4, HIGH);
+  delay(100);
+  digitalWrite(4, LOW);
+  delay(100);
+    digitalWrite(3, HIGH);
+   digitalWrite(2, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+  digitalWrite(2, LOW);
+  delay(100);
+   digitalWrite(6, HIGH);
+  digitalWrite(5, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+  digitalWrite(5, LOW);
+  delay(100);
+  digitalWrite(8, HIGH);
+   digitalWrite(7, HIGH);
+  delay(100);
+  digitalWrite(8, LOW);
+  digitalWrite(7, LOW);
+  delay(100);
+  digitalWrite(10, HIGH);
+  digitalWrite(9, HIGH);
+  delay(100);
+  digitalWrite(10, LOW);
+  digitalWrite(9, LOW);
+  delay(100);
+
+{allon();} 
+delay(2300);
+{alloff();} 
+
+delay(100);
+{allon();} 
+delay(3900); // new thing
+
+{alloff();} 
+delay(1000); // gun
+
+{allon();} 
+delay(300);
+{alloff();} 
+delay(100);
+
+//{allon();} 
+//delay(630);
+//{alloff();} 
+//delay(600);
+
+{hfc();} 
+delay(640); //slow mo
+
+ {alloff();} 
+  delay(2500);
+
+  {allon();} 
+  delay(500); // panic mode
+  {alloff();} 
+  delay(500);
+  {allon();} 
+  delay(400);
+  {alloff();} 
+  delay(400);
+  {allon();} 
+  delay(300);
+  {alloff();} 
+  delay(300);
+  {allon();} 
+  delay(200);
+  {alloff();} 
+  delay(200);
+  {allon();} 
+  delay(100);
+  {alloff();} 
+  delay(100);
+  {allon();} 
+  delay(50);
+  
+  {alloff();} 
+  delay(5500);
+
+  {allon();} 
+  delay(10000);
+  
+
+
+
+
 }
-
-

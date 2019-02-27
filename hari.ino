@@ -379,7 +379,7 @@ void tb(){
 
 void setup()
 {
-  pinMode(5, OUTPUT);
+pinMode(5, OUTPUT);
 pinMode(6, OUTPUT);
 pinMode(7, OUTPUT);
 pinMode(8, OUTPUT);
@@ -395,85 +395,104 @@ pinMode(15,OUTPUT);
 }
 void loop()
 {
-{allon();}
+   {allon();}
   delay(1000);
   {alloff();}
-  delay(1000);
+  delay(10500);
+  
   {ar();}
-  delay(1000);
-  {allon();}
-  delay(1000);
+  delay(2000);
   {alloff();}
   delay(1000);
   {allon();}
-  delay(1000);
+  delay(4500);
+  
   {alloff();}
-  delay(1000);
-  {allon();}
-  delay(1000);
-  {alloff();}
-  {allon();}
-  delay(1000);
-  {up();}
-  delay(1000);
-  {alloff();}
-  delay(1000);
-  {allon();}
-  delay(1000);
-  {alloff();}
-  delay(1000);
-  {allon();
-  }
-  delay(1000);
-  {alloff();}
-  delay(1000);
-
-  {allon();}
-  delay(1000);
-  {alloff();} //blink
-  delay(1000);
-{h();}
-delay(1000);
-  {alloff();}
-  delay(1000);
-
-  {allon();}
-  delay(1000);
-  {alloff();} //blink
-  delay(1000);
-   {allon();}
-  delay(1000);
-  {alloff();} //blink
-  delay(1000);
-   {allon();}
-  delay(1000);
-  {alloff();} //blink
-  delay(1000);
-   {allon();}
-  delay(1000);
-  {alloff();} //blink
-  delay(1000);
-   {allon();}
-  delay(1000);
-  {alloff();} //blink
-  delay(1000);
-
-  {hi();}
-  delay(1000);
-  {alloff();}
-  delay(1000);
-  {allon();}
-  delay(1000);
-  {alloff();}
-  delay(1000);
-  {allon();}
-  delay(1000);
-  {alloff();}
-  delay(1000);
-   {allon();}
-  delay(1000);
-  {alloff();} 
   delay(10000);
+  
+  {allon();}
+  delay(15000);
+  {alloff();}
+  delay(5600);
+  {up();}
+  delay(300); // moon walk
+  {alloff();}
+  delay(800);
+  {up();}
+  delay(50);
+  {allon();}
+  delay(3050);
+
+  {alloff();}
+  delay(2050);
+  
+  
+//  {allon();}
+//  delay(1000);
+//  {alloff();}
+//  delay(1000);
+//  {bt();} //bt
+//  delay(1000);
+//  {tb();}
+//  delay(1000);//tb
+
+{allon();} 
+delay(2300);
+{alloff();} 
+
+delay(100);
+{allon();} 
+delay(3900);
+
+{alloff();} 
+delay(500); // gun
+{allon();} 
+delay(300);
+{alloff();} 
+delay(100);
+
+
+{hi();} 
+delay(1380); //slow mo
+
+{alloff();} 
+delay(2500);
+
+{allon();} 
+  delay(500); // panic mode
+  {alloff();} 
+  delay(500);
+  {allon();} 
+  delay(400);
+  {alloff();} 
+  delay(400);
+  {allon();} 
+  delay(300);
+  {alloff();} 
+  delay(300);
+  {allon();} 
+  delay(200);
+  {alloff();} 
+  delay(200);
+  {allon();} 
+  delay(100);
+  {alloff();} 
+  delay(100);
+  {allon();} 
+  delay(50);
+   {alloff();} 
+  delay(50);
+  {allon();} 
+  delay(3450);//2nd
+   {alloff();} 
+  delay(2050);
+
+  {allon();} 
+  delay(10000); //3rd
+
+
 }
+
+
 
 
