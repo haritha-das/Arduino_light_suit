@@ -262,60 +262,7 @@ pinMode(15,OUTPUT);
 }
 void loop()
 {
-  {alloff();}
-  delay(1500);
-  {allon();}
-  delay(1000);
-  {alloff();}
-  delay(1000);
-   {allrun();}
-   delay(50);
-   {allrun();}
-   delay(100);
- {h();}
-  delay(100);
-  {ra();}
-  delay(100);
-  {la();}
-  delay(100);
-  {lh();}
-  delay(100);
-  {rh();}
-  delay(100);
- 
-  {ll();}
-  delay(100);
-   {rl();}
-  delay(100);
-    {lf();}
-  delay(100);
-
-  {rf();}
-  delay(100);
-  {ha();}
-  delay(100);
-  {hi();}
-  delay(100);
-  {bl();}
-  delay(100);
-  {f();}
-  delay(100);
-{cc();}
-delay(100);
- {rlc();}
-delay(100); 
-{lrc();}
-delay(100);
-{hfc();}
-delay(100);
-{al();}
-delay(100);
-{ar();}
-delay(100);
-}
-
-
-
-
-
   
+ 
+ 
+}
