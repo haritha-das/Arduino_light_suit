@@ -49,18 +49,6 @@ rlc - right hand&left leg
   digitalWrite(3,0);
   digitalWrite(2,0);
 }
-//  void allrun()
-//  
-//  {
-//    
-// int a[12]={5,6,7,8,9,10,11,12,13,14,15};
-//  for (int i=0; i < sizeof(a)/sizeof(a[0]);i++)
-// {
-//  digitalWrite(a[i],1);
-//  delay(100);
-//  digitalWrite(a[i],0);
-//}
-//}
 
 void h(){
   int h;
@@ -68,8 +56,6 @@ void h(){
   {
     digitalWrite(4,1);
     delay(100);
-//    digitalWrite(4,0);
-//    delay(100);
   }
 }
 void ha(){
@@ -77,10 +63,7 @@ void ha(){
   {
     digitalWrite(2,1);
     digitalWrite(3,1);
-    delay(100);
-//    digitalWrite(2,0);
-//    digitalWrite(3,0);
-//    delay(100);   
+    delay(100);   
   }
 }
 
@@ -88,54 +71,42 @@ void la()
   {
   digitalWrite(2,1);
   delay(100);
-//  digitalWrite(2,0);
-//  delay(100);  
+
 }
 void ra()
 {
   digitalWrite(3,1);
   delay(100);
-//    digitalWrite(3,0);
-//    delay(100);
 }
+
 void hi()
 {
     digitalWrite(5,1);
       digitalWrite(6,1);
     delay(100);
-//      digitalWrite(5,0);
-//        digitalWrite(6,0);
-//      delay(100);  
+
 }
 
 void lh()
 {
   digitalWrite(5,1);
-  delay(100);
-//   digitalWrite(5,0);
-//   delay(100);
-//    
+  delay(100);    
 }
 void rh()
 {
     digitalWrite(6,1);
     delay(100);
-//      digitalWrite(6,0);
-//      delay(100);
 }  
 void ll()
 {
     digitalWrite(7,1);
     delay(100);
-//      digitalWrite(7,0);
-//      delay(100);
+
 }
 void rl()
 {
    digitalWrite(8,1);
    delay(100);
-//    digitalWrite(8,0);
-//    delay(100);
 }
 
 void bl()
@@ -143,52 +114,24 @@ void bl()
   digitalWrite(7,1);
   digitalWrite(8,1);
   delay(100);
-//  digitalWrite(7,0);
-//  digitalWrite(8,0);
-//  delay(100);
 }
 void lf()
 {
    digitalWrite(9,1);
    delay(100);
-//    digitalWrite(9,0);
-//    delay(100);
 }
 void rf()
 {
    digitalWrite(10,1);
    delay(100);
-//    digitalWrite(10,0);
-//    delay(100);
 }
 void f()
 {
   digitalWrite(9,1);
     digitalWrite(10,1);
     delay(100);
-     // digitalWrite(9,0);
-       // digitalWrite(10,0);
-        //delay(100);
   
 }
-//void rlc()
-//{
-  // digitalWrite(3,1);
-    //digitalWrite(7,1);
-   //delay(100);
-   //digitalWrite(3,0);
-    //digitalWrite(7,0);
-    //delay(100);
-//}
-//void lrc()
-//{
-  // digitalWrite(2,1);
-    //digitalWrite(8,1);
-    //delay(100);
-    //digitalWrite(2,0);
-    //digitalWrite(8,0);
-    //delay(100);
-//}
     void cc()
     {
       digitalWrite(2,1);
@@ -217,11 +160,6 @@ void f()
           digitalWrite(7,1);
               digitalWrite(9,1);
               delay(100);
-//              digitalWrite(2,0);
-//      digitalWrite(5,0);
-//          digitalWrite(7,0);
-//              digitalWrite(9,0);
-//              delay(100);
               
     }
     void ar()
@@ -231,11 +169,7 @@ void f()
           digitalWrite(8,1);
               digitalWrite(10,1);
               delay(100);
-//              digitalWrite(3,0);
-//      digitalWrite(6,0);
-//          digitalWrite(8,0);
-//              digitalWrite(10,0);
-//              delay(100);
+
     }
     void w()
     {
@@ -243,16 +177,16 @@ void f()
       digitalWrite(10,1);
       delay(500);
       digitalWrite(7,1);
-         digitalWrite(8,1);
-         delay(500);
-            digitalWrite(5,1);
-               digitalWrite(6,1);
-               delay(500);
-                  digitalWrite(2,1);
-                  digitalWrite(3,1);
-                  delay(500);
-                     digitalWrite(4,1);
-                     delay(500);
+      digitalWrite(8,1);
+      delay(500);
+      digitalWrite(5,1);
+      digitalWrite(6,1);
+      delay(500);
+      digitalWrite(2,1);
+      digitalWrite(3,1);
+      delay(500);
+      digitalWrite(4,1);
+      delay(500);
     }
     
 void up()
@@ -269,19 +203,11 @@ void rfl()
 {
  digitalWrite(10,1);
  digitalWrite(8,1);
-// delay(1000);
-//   digitalWrite(10,0);
-// digitalWrite(8,0);
-// delay(1000);
 }
 void lfl()
 {
  digitalWrite(9,1);
  digitalWrite(7,1);
-// delay(1000);
-//   digitalWrite(9,0);
-// digitalWrite(7,0);
-// delay(1000);
 }
 void dwn()
 {
@@ -289,25 +215,18 @@ void dwn()
  digitalWrite(8,1);
    digitalWrite(9,1);
  digitalWrite(10,1);
- //delay(1000);
 }
 void lhh()
 {
  digitalWrite(2,1);
  digitalWrite(5,1);
  delay(1000);
-//   digitalWrite(2,0);
-// digitalWrite(5,0);
-// delay(1000);
 }
 void rhh()
 {
  digitalWrite(3,1);
  digitalWrite(6,1);
  delay(1000);
-//   digitalWrite(3,0);
-// digitalWrite(6,0);
-// delay(1000);
 }
 void rhhh()
 {
@@ -315,10 +234,6 @@ void rhhh()
  digitalWrite(6,1);
   digitalWrite(8,1);
  digitalWrite(10,1);
-
-//   digitalWrite(3,0);
-// digitalWrite(6,0);
-// delay(1000);
 }
 
 void lhhh()
@@ -327,10 +242,6 @@ void lhhh()
  digitalWrite(5,1);
  digitalWrite(7,1);
  digitalWrite(9,0);
-// delay(1000);
-//   digitalWrite(2,0);
-// digitalWrite(5,0);
-// delay(1000);
 }
 
 void bt(){
@@ -627,9 +538,4 @@ delay(640); //slow mo
 
   {allon();} 
   delay(10000);
-  
-
-
-
-
 }
